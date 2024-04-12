@@ -6,19 +6,11 @@ using UnityEngine.UI;
 public class Turningplate : MonoBehaviour
 {
     public Vector2 rotation;
-
+    public float speed;
     public Transform turningPlate;
 
-    public void RotateX()
+    public void Update()
     {
-        //rotation.x = Input.GetAxis("Mouse X");
-        //rotation.y = Input.GetAxis("Mouse Y");
-
-        turningPlate.Rotate(rotation.x, 0, 0);
-        /*if (Input.GetMouseButton(0))
-        {
-        }*/
-
-        Debug.Log("AAAAAAAAAA");
+        turningPlate.Rotate(0, rotation.y, 0 * Time.deltaTime);
     }
 }
