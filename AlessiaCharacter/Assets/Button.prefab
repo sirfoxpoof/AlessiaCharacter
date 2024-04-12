@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.80718225, g: 0.8713462, b: 0.9150943, a: 1}
+    m_PressedColor: {r: 0.5803922, g: 0.7529412, b: 0.87058824, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -201,8 +201,7 @@ MonoBehaviour:
   m_text: Walking
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cd538ed5393d0a4c9a1df62de543b0b, type: 2}
-  m_sharedMaterial: {fileID: -6435645452452524062, guid: 5cd538ed5393d0a4c9a1df62de543b0b,
-    type: 2}
+  m_sharedMaterial: {fileID: -6435645452452524062, guid: 5cd538ed5393d0a4c9a1df62de543b0b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
