@@ -13,7 +13,8 @@ public class Turningplate : MonoBehaviour
     {
         if (buttonOn)
         {
-            ClickButton();
+            //ClickButton();
+            turningPlate.Rotate(0, rotation.y, 0 * Time.deltaTime);
         }
     }
 
@@ -28,6 +29,5 @@ public class Turningplate : MonoBehaviour
         {
             buttonOn = false;
         }
-        turningPlate.Rotate(0, rotation.y, 0 * Time.deltaTime);
    }
 }
