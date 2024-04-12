@@ -13,6 +13,10 @@ public class Turningplate : MonoBehaviour
     public Animator animatorCharacter, animatorTeddy;
     public Transform teddy;
 
+    private void Start()
+    {
+        teddy.gameObject.SetActive(false);
+    }
 
     //Checkt of de button geklikt is en roteert de plaat dan
     public void Update()
@@ -53,9 +57,9 @@ public class Turningplate : MonoBehaviour
 
     public void Teddy()
     {
-        animatorCharacter.Play("Teddy");
-        animatorTeddy.SetTrigger("Teddy");
         teddy.gameObject.SetActive(true);   
+        animatorCharacter.Play("Teddy");
+        animatorTeddy.Play("Teddy");
     }
 
 
