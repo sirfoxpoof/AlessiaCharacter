@@ -9,15 +9,20 @@ public class Turningplate : MonoBehaviour
     public Transform turningPlate;
 
     bool buttonOn = false;
+
+    public Animator animatorCharacter, animatorTeddy;
+    public Transform teddy;
+
+
+    //Checkt of de button geklikt is en roteert de plaat dan
     public void Update()
     {
         if (buttonOn)
         {
-            //ClickButton();
             turningPlate.Rotate(0, rotation.y, 0 * Time.deltaTime);
         }
     }
-
+    //zet bool uit en aan op basis van waar hij eerst op stond
    public void ClickButton()
    {
 
@@ -30,4 +35,28 @@ public class Turningplate : MonoBehaviour
             buttonOn = false;
         }
    }
+
+
+    //animatie voids
+
+    public void Jump()
+    {
+        animatorCharacter.Play("rig|Jump");
+        teddy.gameObject.SetActive(false);
+    }
+
+    public void Walking()
+    {
+        animatorCharacter.Play("rig|walking");
+        teddy.gameObject.SetActive(false);
+    }
+
+    public void Teddy()
+    {
+        animatorCharacter.Play("Teddy");
+        animatorTeddy.SetTrigger("Teddy");
+        teddy.gameObject.SetActive(true);   
+    }
+
+
 }
